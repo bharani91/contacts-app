@@ -1,7 +1,7 @@
 ## Contacts Managager Application
 --------------
 
-### [Demo](contacts-manager-demo.meteor.com)
+### [Demo](http://contacts-manager-demo.meteor.com)
 
 --------------
 
