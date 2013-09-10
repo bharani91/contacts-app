@@ -1,0 +1,11 @@
+<template name="send_email">
+	{{#if isEmailing}}
+		<hr>
+		<input type="text" class="subject" placeholder="Subject">
+		<textarea class="message" placeholder="Message..."></textarea>
+		<input type="submit" class="btn btn-primary btn-small send_email">
+		<button class="btn btn-inverse btn-small hide_email_form">Cancel</button>
+	{{else}}
+		<button class="btn btn-primary btn-small show_email_form">Send Email</button>
+	{{/if}}
+</template>

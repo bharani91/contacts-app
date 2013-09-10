@@ -1,0 +1,9 @@
+<template name="app_view">
+	{{#if currentUser }}
+		{{> add_contact}}			
+		{{> contact_list }}
+	{{else}}
+		{{> access_denied }}
+	{{/if}}
+	
+</template>

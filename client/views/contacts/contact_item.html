@@ -1,0 +1,51 @@
+<template name="contact_item">
+	<li>
+		{{#if isEditing}}
+
+
+			<form>
+				<input type="text" class="name" value="{{ name }}">
+
+				<input type="text" class="email" value="{{ email }}">
+
+				<input type="text" class="phone" value="{{ phone }}">
+
+				<input type="text" class="twitter" value="{{ twitter }}">
+
+				<input type="submit" class="btn btn-primary btn-small update" value="Update Contact">
+				<button class="btn btn-inverse btn-small cancel">Cancel</button>
+			</form>
+
+
+		{{else }}
+			<h3>
+				{{ name }}
+			</h3>
+
+			<ul class="unstyled">
+				<li>
+					<strong>Email: </strong> {{ email }}
+				</li>
+
+				<li>
+					<strong>Phone: </strong> {{ phone }}
+				</li>
+
+				<li>
+					<strong>Twitter: </strong> {{ twitter }}
+				</li>
+			</ul>
+			<br>
+
+			
+			<button class="btn edit btn-small">Edit</button>
+			
+		{{/if}}
+		
+
+		<button class="btn btn-danger btn-small delete">Delete</button>
+
+		{{> send_email}}
+		
+	</li>
+</template>
